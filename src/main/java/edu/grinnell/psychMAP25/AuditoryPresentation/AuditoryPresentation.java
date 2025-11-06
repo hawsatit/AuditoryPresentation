@@ -5,20 +5,24 @@
 
 package edu.grinnell.psychMAP25.AuditoryPresentation;
 
-import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.List;
-import java.util.Scanner;
-import javax.swing.JFrame;
-
-
 
 public class AuditoryPresentation {
     public static void main(String[] args) {
-        System.out.println("AuditoryPresentation running...");
-        // Your logic here
+        List<Sequence> sequences = SequenceBank.getAllSequences();
+
+        for (Sequence seq : sequences) {
+            System.out.println("▶ Playing sequence: " + seq);
+            seq.play();
+            try {
+                Thread.sleep(5000); // optional pause between sequences
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+        }
+
+        System.out.println("✅ Done playing all sequences.");
     }
 }
+
 

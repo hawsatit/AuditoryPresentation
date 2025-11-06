@@ -1,2 +1,7 @@
 edu/grinnell/psychMAP25/AuditoryPresentation/AuditoryPresentation.class
+edu/grinnell/psychMAP25/AuditoryPresentation/Tone.class
 edu/grinnell/psychMAP25/AuditoryPresentation/TonePlayer.class
+edu/grinnell/psychMAP25/AuditoryPresentation/SequenceRunner.class
+edu/grinnell/psychMAP25/AuditoryPresentation/SequenceBank.class
+edu/grinnell/psychMAP25/AuditoryPresentation/Sequence.class
+edu/grinnell/psychMAP25/AuditoryPresentation/ToneBank.class
