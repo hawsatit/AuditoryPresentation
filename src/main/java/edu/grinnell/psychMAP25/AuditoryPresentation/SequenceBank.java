@@ -23,7 +23,6 @@ public class SequenceBank {
         sequences.add(new Sequence(List.of("A2", "B2", "A2")));
         sequences.add(new Sequence(List.of("A1", "B1", "A2")));
         sequences.add(new Sequence(List.of("A1", "B2", "A2")));
-        sequences.add(new Sequence(List.of("A2", "B1", "A1")));
         sequences.add(new Sequence(List.of("A2", "B2", "A1")));
         sequences.add(new Sequence(List.of("A1", "B1", "B1", "A1")));
         sequences.add(new Sequence(List.of("A1", "B1", "B1", "A2")));
@@ -31,7 +30,6 @@ public class SequenceBank {
         sequences.add(new Sequence(List.of("A1", "B1", "B2", "A2")));
         sequences.add(new Sequence(List.of("A1", "B2", "B1", "A1")));
         sequences.add(new Sequence(List.of("A1", "B2", "B1", "A2")));
-        sequences.add(new Sequence(List.of("A1", "B2", "B2", "A1")));
         sequences.add(new Sequence(List.of("A1", "B2", "B2", "A2")));
         sequences.add(new Sequence(List.of("A2", "B1", "B1", "A1")));
         sequences.add(new Sequence(List.of("A2", "B1", "B1", "A2")));
@@ -64,7 +62,6 @@ public class SequenceBank {
         sequences.add(new Sequence(List.of("A1", "B2", "B1", "B2", "B1", "A1")));
         sequences.add(new Sequence(List.of("A1", "B2", "B1", "B2", "B1", "A2")));
         sequences.add(new Sequence(List.of("A1", "B2", "B1", "B2", "B2", "A1")));
-        sequences.add(new Sequence(List.of("A1", "B2", "B1", "B2", "B2", "A2")));
         sequences.add(new Sequence(List.of("A1", "B2", "B2", "B1", "B1", "A1")));
         sequences.add(new Sequence(List.of("A1", "B2", "B2", "B1", "B1", "A2")));
         sequences.add(new Sequence(List.of("A1", "B2", "B2", "B1", "B2", "A1")));
@@ -85,7 +82,6 @@ public class SequenceBank {
         sequences.add(new Sequence(List.of("A2", "B1", "B2", "B1", "B1", "A2")));
         sequences.add(new Sequence(List.of("A2", "B1", "B2", "B1", "B2", "A1")));
         sequences.add(new Sequence(List.of("A2", "B1", "B2", "B1", "B2", "A2")));
-        sequences.add(new Sequence(List.of("A2", "B1", "B2", "B2", "B1", "A1")));
         sequences.add(new Sequence(List.of("A2", "B1", "B2", "B2", "B1", "A2")));
         sequences.add(new Sequence(List.of("A2", "B1", "B2", "B2", "B2", "A1")));
         sequences.add(new Sequence(List.of("A2", "B1", "B2", "B2", "B2", "A2")));
