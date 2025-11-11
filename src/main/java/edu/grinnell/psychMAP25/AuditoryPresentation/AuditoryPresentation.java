@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class AuditoryPresentation {
-    
+
     public static void clearConsole() {
         try {
             String os = System.getProperty("os.name");
@@ -20,24 +20,34 @@ public class AuditoryPresentation {
             for (int i = 0; i < 50; i++) System.out.println();
         }
     }
-    
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Which sequence set would you like to use?");
-        System.out.println("Enter 1 for SequenceBank");
-        System.out.println("Enter 2 for SequenceBank2");
-        String choice = scanner.nextLine().trim();
+        List<Sequence> sequences = null;
+        String choice = "";
 
-        List<Sequence> sequences;
-        if (choice.equals("2")) {
-            clearConsole();
-            sequences = SequenceBank2.getAllSequences();
-        } else {
-            clearConsole();
-            sequences = SequenceBank.getAllSequences();  // default to SequenceBank
+        // Keep prompting until valid input
+        while (true) {
+            System.out.println("Which sequence set would you like to use?");
+            System.out.println("Enter a for Condition A");
+            System.out.println("Enter b for Condition B");
+            choice = scanner.nextLine().trim().toLowerCase();
+
+            if (choice.equals("b")) {
+                clearConsole();
+                sequences = SequenceBank2.getAllSequences();
+                break;
+            } else if (choice.equals("a")) {
+                clearConsole();
+                sequences = SequenceBank.getAllSequences();
+                break;
+            } else {
+                clearConsole();
+                System.out.println("Invalid input. Please enter 'a' or 'b'.\n");
+            }
         }
-        
+
         System.out.println("Playing Sounds!");
 
         for (Sequence seq : sequences) {
@@ -49,6 +59,6 @@ public class AuditoryPresentation {
             }
         }
 
-        System.out.println("✅ Done playing all sequences.");
+        System.out.println("Done playing all sequences.");
     }
 }
