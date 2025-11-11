@@ -20,7 +20,6 @@ public class AuditoryPresentation {
         }
 
         for (Sequence seq : sequences) {
-            System.out.println("▶ Playing sequence: " + seq);
             seq.play();
             try {
                 Thread.sleep(5000); // pause between sequences
